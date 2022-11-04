@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./news-homepage-main/assets/images/favicon-32x32.png">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="./news-homepage-main/assets/images/logo.svg" alt="" id="nav-logo">
+            <div id="nav-mob" onclick="toggleMobMenu(this)">
+                <div id="line1"></div>
+                <div id="line2"></div>
+                <div id="line3"></div>
+                <ul id="mob-nav">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">New</a></li>
+                    <li class="nav-item"><a href="#">Popular</a></li>
+                    <li class="nav-item"><a href="#">Trending</a></li>
+                    <li class="nav-item"><a href="#">Categories</a></li>
+                </ul>
+            </div>
+            <ul id="nav">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#">New</a></li>
+                <li class="nav-item"><a href="#">Popular</a></li>
+                <li class="nav-item"><a href="#">Trending</a></li>
+                <li class="nav-item"><a href="#">Categories</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="./news-homepage-main/assets/images/image-web-3-desktop.jpg" alt="" id="image-web">
+            <img src="./news-homepage-main/assets/images/image-web-3-mobile.jpg" alt="" id="image-mob">
+            <h1 id="bright">The Bright Future of Web 3.0?</h1>
+            <div id="evolution">
+                <p>We dive into the next evolution of the web that claims to put the power of the 
+                    platforms back into the hands of the people. But is it really fulfilling its promise?
+                </p>
+                <button id="read">READ MORE</button>
+            </div>
+            <aside id="new">
+                <h2>New</h2>
+                <ul id="infos">
+                    <li class="info">
+                        <h5>Hydrogen VS Electric Cars</h5>
+                        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                    </li>
+                    <li class="info">
+                        <h5>The Downside of AI Artistry</h5>
+                        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                    </li>
+                    <li class="info">
+                        <h5>Is VC Funding Drying Up?</h5>
+                        <p>Private funding by VC firm is down 50% YOY. We take a look at what that means.</p>
+                    </li>
+                </ul>
+            </aside>
+            <div id="flex">
+                <div class="flex-item">
+                    <img src="./news-homepage-main/assets/images/image-retro-pcs.jpg" alt="" class="flex-img">
+                    <div class="flex-main">
+                        <h2>01</h2>
+                        <span>Reviving Retro PCs</span>
+                        <p>What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img src="./news-homepage-main/assets/images/image-top-laptops.jpg" alt="" class="flex-img">
+                    <div class="flex-main">
+                        <h2>02</h2>
+                        <span>Top 10 Laptops of 2022</span>
+                        <p>Our best picks for various needs and budgets.</p>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <img src="./news-homepage-main/assets/images/image-gaming-growth.jpg" alt="" class="flex-img">
+                    <div class="flex-main">
+                        <h2>03</h2>
+                        <span>The Growth of Gaming</span>
+                        <p>How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMobMenu (menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+</body>
+</html>
